@@ -5,12 +5,14 @@ import './App.css'
 import Pages from './components/Pages/Pages';
 import NavBar from './components/Navbar/Navbar';
 
+
 function App() {
   
 
   return (
 
   <NavBar></NavBar>
+  
   );
 }
 
