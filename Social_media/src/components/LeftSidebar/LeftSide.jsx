@@ -14,8 +14,8 @@ const LeftSide = () => {
     const count=useRef(0);
     useEffect(()=>{
         const imageList=[
-            {id:""
-            image:laptop,
+            {id:"",
+            imageList:"laptop",
         },
     ];
         
@@ -23,13 +23,13 @@ const LeftSide = () => {
     return (
         <div className="flex flex-col h-screen w-fit bg-white pb-4 border-2 rounded-r-x1 shadow-lg">
            
-            <div className="flex img flex-col  items-center relative">
+            <div className="flex img w-full flex-col  items-center relative">
                 <img  
                     className="h-28 w-full rounded-r-x1"
                     src={nature} 
                     alt="nature"
                 />
-                 <div className="absolute bottom-4">
+                 <div className="absolute bottom-4 mt-4">
                 <Tooltip content="Profile" placement="top">
                     <MaterialAvatar size="md" src={avatarImage} alt="avatar" /> 
                 </Tooltip>
@@ -42,10 +42,10 @@ const LeftSide = () => {
                 <p className="font-roboto font-medium text-xs text-gray-700 no-underline tracking-normal leading-none">Access exclusive tools& insignts</p>
                 <p className="font-roboto font-medium text-sm text-gray-700 no-underline tracking-normal leading-none">Try premium for free </p>
             </div>
-            <div className="flex flex-col p1-2">
+            <div className="flex flex-col p1-2 mt-4">
                 <div className="flex items-center pb-4">
                 <img className="h-10" src={location} alt="location"></img>
-                <p className="font-roboto font-bold text-lg  no-underline tracking-normal leading-none">India</p>
+                <p className="font-roboto font-bold text-lg  no-underline tracking-normal leading-none mt-2 ">India</p>
                 </div>
             </div>
             <div className="flex flex-col p1-2">
@@ -95,6 +95,8 @@ const LeftSide = () => {
                 <div className="bg-blue-600 rounded-xl h-1 mb-4">
 
                 </div>
+                <img className={laptop} src="" alt="ads"/>
+                <img className={laptop} src="" alt="ads"/>
                 <img className={laptop} src="" alt="ads"/>
             </div>
         </div>
